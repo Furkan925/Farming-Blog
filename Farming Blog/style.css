@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.wrapper {
+    width: 80%;
+    height: auto;
+    margin: 80px auto;
+    margin-bottom: 0;
+}
+
+/* Header-section  */
+.header-container {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #cfe8fc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    /* border: solid; */
+
+}
+
+.btn {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgb(13, 193, 13);
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* buttons-links hover section  */
+.nav-links li a:hover {
+    display: inline-block;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+    color: black;
+}
+
+.btn:hover {
+    transform: scale(1.01) translateY(-2px);
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(23, 188, 48);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+    color: black;
+}
+
+.Read-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+}
+
+.img:hover {
+    transition: all 0.3s ease-in;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* buttons-links hover section End */
+/* image-section start  */
+.img-container {
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin: 80px auto;
+    margin-top: 20px;
+}
+
+
+.main-img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    filter: brightness(70%) blur(1px);
+}
+
+.overlay-txt {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay-txt h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.Read-btn {
+    background: rgb(13, 193, 13);
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* image-section End */
+/* About section  */
+/* Section styling */
+#About {
+    padding: 60px 20px;
+    background-color: #eefae0;
+    /* soft green */
+    text-align: left;
+    border-radius: 20px;
+}
+
+#About h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#About h2 {
+    font-size: 25px;
+    color: black;
+
+}
+
+/* Paragraph styling */
+#About p {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* post section  */
+.post-container {
+    width: 100%;
+    height: auto;
+}
+
+.post-container h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.post-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.regular-pst {
+    width: 22%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.regular-pst p {
+    color: rgb(13, 193, 13);
+}
+
+.regular-pst h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+/* End post section  */
+/* faq container start */
+.faq {
+    width: 80%;
+    margin: 0px 80px 0px 80px auto;
+    background-color: #eefae0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.faq h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.faq details {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.faq summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq p {
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* faq container end  */
+
+/* Contact information  */
+.contact-info h1 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-btn {
+    margin-top: 10px;
+    width: 30%;
+    background-color: rgb(13, 193, 13);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.input-txt {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #b2b2b29a;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+}
+
+input::placeholder {
+    color: rgb(13, 193, 13)
+}
+
+/* End contact information  */
+
+/* footer-content  */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.links1 {
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links2 {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    gap: 15px;
+    font-size: larger;
+}
+
+.footer-links {
+    list-style: none;
+
+}
+
+.footer-links li a {
+    color: rgb(21, 110, 34);
+    text-decoration: none;
+    padding: 8px 20px;
+}
+
+.copyright {
+    color: rgb(21, 110, 34);
+}
+
+/* footer content End  */
+
+/* login-container star  */
+.login-container {
+    position: relative;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    position: fixed;
+    opacity: 0;
+    z-index: 1000;
+    transform: translate(-50%, -60%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.form-group {
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.login-content label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 12px;
+    margin: 0px 0px 20px 0px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.form-group a {
+    color: black;
+    text-decoration: none;
+}
+
+.login1-btn {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.close-btn {
+    font-size: larger;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    border: none;
+    padding: 3px;
+    background: rgb(207, 207, 207);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* login container end  */
+.subscribe-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    border-radius: 20px;
+    position: fixed;
+    opacity: 0;
+    z-index: 1000;
+    transform: translate(-50%, -60%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+
+}
+
+.subs-btn-content {
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    row-gap: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.subs-btn-content input {
+    width: 100%;
+    padding: 5px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border-radius: 10px;
+}
+
+.modal-popup {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.blur {
+    filter: blur(30px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* toggle start*/
+.toggle {
+    margin-top: 5px;
+}
+
+.img-container1 {
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+}
+
+.img-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.content h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: rgb(13, 193, 13);
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    color: rgb(13, 193, 13);
+}
+
+/* toggle end  */
+/* Media queries section start  */
+@media (max-width: 750px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .header {
+        flex-wrap: wrap;
+        row-gap: 5px;
+        justify-content: center;
+    }
+
+    .btn-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .wrapper,
+    .img-container,
+    .faq {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .regular-pst {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .post-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container1 img,
+    .main-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .overlay-txt h1 {
+        font-size: 30px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input {
+        margin-right: 10px;
+        margin-left: 1px;
+    }
+
+    .footer-content {
+        width: 100%;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .links1 {
+        gap: 1px;
+    }
+
+    .footer-links li a {
+        display: flex;
+        padding: 8px 20px;
+    }
+
+}
